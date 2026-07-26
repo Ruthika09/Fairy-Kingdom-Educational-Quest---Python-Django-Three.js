@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }} - Children's Educational Game</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Three.js for Particle Effects -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <!-- GSAP Animation Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <!-- Canvas Confetti -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <style>
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            user-select: none;
+            overflow: hidden;
+            background: #0f172a;
+        }
+        #three-canvas {
+            position: absolute;
+            inset: 0;
+            pointer-events: none;
+            z-index: 5;
+        }
+    </style>
+</head>
+<body class="w-screen h-screen flex flex-col justify-center items-center text-white relative">
+    <!-- Three.js Canvas Container -->
+    <div id="three-canvas"></div>
+
+    <!-- App Container -->
+    <div id="root" class="w-full h-full relative z-10 flex items-center justify-center">
+        <!-- Rendered by Vite / React bundles or Django script below -->
+        <div className="text-center p-8 bg-white/10 backdrop-blur-md rounded-3xl border border-white/20">
+            <h1 className="text-3xl font-black mb-4">🌸 Little Fairy Forest Adventure 🌸</h1>
+            <p className="text-sm font-bold text-pink-200">Welcome to Rainbow Blossom Kingdom!</p>
+            <p className="text-xs text-gray-300 mt-2">Running on Python & Django server.</p>
+        </div>
+    </div>
+
+    <script type="module" src="/static/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+{
+  "name": "Little Fairy Forest Adventure",
+  "description": "An educational visual novel adventure game for children aged 6-12, set in a magical fairy forest.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
